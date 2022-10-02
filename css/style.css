@@ -1,0 +1,745 @@
+/* Приєднання шрифтів */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+body{
+	font-family: "Lato", serif;
+	color: #424551;
+}
+
+
+[class*="-container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.page {
+	padding-top: 50px;
+	margin-bottom: 100px;
+}
+
+
+.page-title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+
+.fisher{
+	margin-bottom: 16px;
+}
+.page-text {
+	line-height: 160%;
+	margin-bottom: 46px;
+}
+.page-title2 {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+
+.page-text2{
+	line-height: 160%;	
+	margin-bottom: 50px;
+}
+
+.page-text2 li{
+	
+	padding-left: 32px;
+	min-height: 25px;
+	background: url("../img/icons/Vector.svg") 0 5px no-repeat;
+}
+
+
+.page-text2 li:not(:last-child){
+	margin-bottom: 4px;
+}
+
+
+.page-inscription {
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 8px;
+
+}
+.page-lead {
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+.list {
+	margin-bottom: 32px;
+}
+
+.list li{
+	margin-bottom: 4px;
+	padding-left: 24px;
+	font-weight: 700;
+	line-height: 160%;
+	min-height: 25px;
+}
+
+.list ul>*:last-child{
+	margin-bottom: 0px;
+}
+
+
+.list-item1 {
+	background: url('../img/icons/star.svg') 0 5px no-repeat;
+}
+.list-item2 {
+	background: url('../img/icons/stamp.svg') 0 5px no-repeat;
+}
+.list-item3 {
+	background: url('../img/icons/play.svg') 0 5px no-repeat;
+}
+
+.page-text3{
+	line-height: 160%;
+}
+	
+
+/* Тренування по псевдокласам */
+
+
+
+
+.training-title {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 50px;
+	font-weight: 900;
+	text-decoration: underline;
+	text-shadow: 2px 8px 3px #000;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+
+
+}
+
+.link {
+	padding-left: 20px;
+	font-size: 30px;
+	color: green;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.link:hover {
+	color: red;
+}
+
+.block{
+	background-color: aqua;
+	color: aliceblue;
+	padding-left: 20px;
+	margin-bottom: 50px;
+	min-height: 100px;
+	padding: 15px;
+	font-size: 20px;
+}
+
+.block:hover{
+	background-color: rgb(81, 227, 14);
+	color: rgb(26, 30, 25);
+	padding-left: 50px;
+}
+
+/* використовую вкладеність для роботи з visibility hidden */
+
+.block2 {
+	background-color: rgb(210, 46, 46);
+	color: rgb(249, 251, 240);
+	padding-left: 20px;
+	margin-bottom: 50px;
+	min-height: 100px;
+	padding: 15px;
+	font-size: 25px;
+
+}
+
+.block2:hover .block2-item{
+	visibility: visible;
+	opacity: 1;
+}
+.block2-item {
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* active випробування псевдокласу :active */
+
+
+.block4 {
+
+	min-height: 100px;
+	background-color: rgb(209, 238, 23);
+	margin-bottom: 50px;
+	padding: 15px;
+	font-size: 25px;
+}
+
+.block4:active{
+	min-height: 80px;
+	font-size: 25px;
+	text-align: center;
+	background-color: rgba(97, 58, 226);
+	color:  rgba(97, 58, 226, 0.66);
+}
+
+.block4-p1 span{
+	font-weight: 900;
+	font-size: 30px;
+}
+.block4:active .block4-p1 {
+	display: none;
+}
+
+.block4:active .block4-p2 {
+	display: block;
+	color: white;
+
+}
+.block4-p2 {
+	display: none;
+	
+}
+
+/* перевірка псевдокласу visited */
+
+.link2{
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.link2 li{
+	margin-bottom: 20px;
+}
+
+.washere {
+
+	color: white;
+} 
+
+.link2-item:visited {
+	color: red;
+}
+
+.link2-item:visited .washere{
+	
+	color: blueviolet;
+}
+
+/* побудова вкладеного списку */
+.list-under{
+	margin-bottom: 50px;
+}
+
+.list-under ul{
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: 700;
+
+}
+
+.list-under li{
+	margin-bottom: 10px;
+}
+
+.list-under ul ul {
+	display: none;
+}
+
+
+
+.list-under ul a:hover + ul{
+	display: block;
+}
+
+/* псевдоклас :focus */
+
+.focus-item:focus {
+	outline: 5px solid red;
+	border-radius: 20%;
+}
+
+.focus a{
+	margin-left: 20px;
+	font-size: 30px;
+	font-weight: 700;
+	color: blue;
+}
+
+.focus{
+	margin-bottom: 50px;
+}
+
+
+/* псевдоклас targer */
+
+.block5 {
+	margin-bottom: 50px;
+
+}
+.block5 a {
+	margin-left: 20px;
+	font-size: 30px;
+	font-weight: 700;
+	color: red;
+}
+.block5-item {
+	padding: 15px;
+	background-color: rgba(190, 49, 49, 0.512);
+	display: none;
+}
+.block5-item:target{
+	display: block;
+}
+
+/* псевдокласи  */
+
+.text-item {
+	background-color: rgba(53, 158, 63, 0.599);
+	color: white;
+	padding: 15px;
+	line-height: 120%;
+	margin-bottom: 50px;
+}
+.text-item p:not(:last-child) {
+	margin-bottom: 15px;
+
+}
+
+.text-item p:first-child{
+	color: rgb(47, 0, 255);
+	text-transform: uppercase;
+}
+
+.text-item p:first-of-type{
+	font-size: 25px;
+
+}
+
+.text-item p:last-child{
+	color: rgb(238, 19, 99);
+	text-transform: capitalize;
+}
+
+.text-item p:last-of-type{
+	text-decoration: underline;
+}
+
+.text-item p:nth-child(odd){
+	background-color: rgb(226, 102, 30);
+}
+
+.text-item p:nth-child(even){
+	text-align: right;
+}
+
+/* відпрацювання псевдокласу not */
+
+.block6 {
+	margin-bottom: 50px;
+	padding: 15px;
+	background-color: rgb(17, 180, 234);
+
+}
+.block6-title {
+	font-size: 30px;
+	font-weight: 700;
+	color: aquamarine;
+	
+}
+.block6-title:not(:last-child){
+	margin-bottom: 20px;
+}
+.block6-text {
+	line-height: 1.2;
+	
+}
+
+.block6-text:not(:last-child){
+	margin-bottom: 20px;
+}
+
+.block6-link {
+	color: aqua;
+	display: inline-block;
+	
+}
+
+.block6-link:not(:last-child){
+	margin-bottom: 20px;
+}
+
+
+/* відпрацювання псевдоелементів */
+
+.block7 {
+	margin-bottom: 50px;
+	margin-left: 20px;
+	font-size: 20px;
+
+}
+
+
+
+.block7 li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.block7 li::before{
+	background: url('../img/icons/Vector.svg') 0 0 no-repeat;
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.8s ease 0s;
+
+}
+
+.block7 li:first-child:hover::before{
+	transform: scale(1.5);
+
+}
+
+.block7 li:nth-child(2):hover::before{
+	transition: all 0.8s ease 0s;
+	transform: rotate(-360deg);
+}
+
+.block7 li:nth-child(3):hover::before{
+	transition: all 0.8s ease 0s;
+	transform: rotate(360deg);
+}
+
+.block7 li:nth-child(4):hover::before{
+	transition: all 0.8s ease 0s;
+	transform: rotate(180deg);
+}
+
+
+.block7 li:last-child:hover::before{
+	transform: scale(2);
+
+}
+
+/* нумерований список*/
+
+.block8 ol{
+	margin-bottom: 50px;
+	margin-left: 20px;
+	counter-reset: item;
+}
+
+.block8 ol li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.block8 ol li::before{
+	counter-increment: item;
+	content: "(" counter(item) ".)";
+	display: inline-block;
+	margin-right: 5px;
+	color: red;
+}
+
+
+
+/* робробка гри */
+
+.game {
+
+	min-height: 700px;
+	background: url("../img/mountain10.jpg") 0 0 / cover no-repeat;
+}
+.game-container {
+
+	min-height: 700px;
+	background: url("") 0 0 / 200px 300px no-repeat,
+	 url("../img/Fire-Dragon-PNG-File.png") 0 300px / 200px 200px no-repeat, 
+	 url("../img/Dragon-PNG-6.png") 650px 20px / 300px 300px no-repeat,
+	 url("../img/Blue-Dragon-PNG-Clipart.png") 450px 300px / 100px 100px no-repeat, 
+	 url("../img/32.jpg") 0 0 / cover no-repeat;
+
+}
+
+
+
+.start {
+   height: 100px;
+	width: 100px;
+	margin-top: 50px;
+	margin-left: 100px;
+	background: url("../img/5.png") -35px 0 / cover no-repeat;
+	
+} 
+
+.start:hover{
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+}
+
+.start:hover + .road1,
+.road1:hover{
+	visibility: visible;
+	
+}
+
+.road1{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	background: url('../img/road2.jpg') 0 0 / cover no-repeat;
+	margin-left: 110px;
+	margin-top: 0px;
+	visibility: hidden;
+}
+
+
+
+.road1:hover + .road2,
+.road2:hover {
+	visibility: visible;
+}
+
+.road2 {
+
+	height: 50px;
+	width: 650px;
+	background-color: aqua;
+	background: url('../img/road1.jpg') 0 0 / contain;
+	margin-left: 110px;
+	visibility: hidden;
+}
+
+.road2:hover::before{
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+}
+.road2:hover + .road3,
+.road3:hover{
+	visibility: visible;
+}
+
+.road3 {
+
+	height: 150px;
+	width: 50px;
+	background-color: aqua;
+	background: url('../img/road2.jpg') 0 0 / contain;
+	margin-left: 710px;
+	visibility: hidden;
+		
+}
+
+.road3:hover::before{
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+}
+
+.road3:hover + .road4,
+.road4:hover{
+	visibility: visible;
+}
+.road4 {
+	height: 50px;
+	width: 200px;
+	background-color: aqua;
+	background: url('../img/road1.jpg') 0 0 / contain;
+	margin-left: 560px;
+	visibility: hidden;
+}
+
+.road4:hover::after{
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+}
+
+.road4:hover + .road5,
+.road5:hover{
+	visibility: visible;
+}
+.road5 {
+	height: 100px;
+	width: 50px;
+	background-color: aqua;
+	background: url('../img/road2.jpg') 0 0 / contain;
+	margin-left: 560px;
+	visibility: hidden;
+}
+
+.road5:hover::before{
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+}
+.road5:hover + .road6,
+.road6:hover{
+	visibility: visible;
+}
+.road6 {
+	height: 50px;
+	width: 400px;
+	background-color: rgb(219, 213, 27);
+	background: url('../img/road1.jpg') 0 0 / contain;
+	margin-left: 560px;
+	visibility: hidden;
+}
+
+.road6:hover::before{
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+}
+.road6:hover + .road7,
+.road7:hover{
+	visibility: visible;
+}
+.road7 {
+	height: 500px;
+	width: 50px;
+	background-color: rgb(195, 121, 24);
+	background: url('../img/road2.jpg') 0 0 / contain;
+	margin-left: 910px;
+	margin-top: -500px;
+	visibility: hidden;
+}
+
+.road7:hover::before{
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+}
+.road7:hover + .road8,
+.road8:hover{
+	visibility: visible;
+}
+
+.road8:hover + .road9,
+.road9:hover{
+	visibility: visible;
+}
+.road8 {
+	height: 50px;
+	width: 200px;
+	background-color: rgb(14, 177, 58);
+	background: url('../img/road1.jpg') 0 0 / contain;
+	margin-left: 910px;
+	margin-top: -500px;
+	visibility: hidden;
+}
+
+.road8:hover::before{
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+}
+
+.road9:hover + .road10,
+.road10:hover{
+	visibility: visible;
+}
+.road9 {
+
+	height: 500px;
+	width: 50px;
+	background-color: rgb(221, 34, 94);
+	background: url('../img/road2.jpg') 0 0 / contain;
+	margin-left: 1060px;
+	visibility: hidden;
+	
+}
+
+.road9:hover::after{
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+}
+
+.road10:hover + .road11,
+.road11:hover{
+	visibility: visible;
+}
+
+.road10{
+	height: 50px;
+	width: 900px;
+	background-color: rgb(221, 34, 94);
+	background: url('../img/road1.jpg') 0 0 / contain;
+	margin-left: 210px;
+	visibility: hidden;
+}
+
+.road10:hover::before{
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: url("../img/knight_other_side.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+}
+
+.road11:hover {
+	visibility: visible;
+}
+.road11{
+	height: 200px;
+	width: 50px;
+	background-color: rgb(221, 34, 94);
+	background: url('../img/road2.jpg') 0 0 / contain;
+	margin-left: 210px;
+	margin-top: -200px;
+	visibility: hidden;
+}
+
+.road11:hover::after{
+	content: "";
+	height: 1000px;
+	width: 890px;
+	background: url("../img/принцесса-принц-дракон-башня-спасать-ягнится-сказ-41912016.jpg") 0 0 / contain no-repeat;
+	display: inline-block;
+	margin-top: -450px;
+	margin-left: -100px;
+}
+
+.finish {
+	height: 300px;
+	width: 150px;
+	margin-top: -420px;
+	margin-left: 150px;
+	background: url("../img/princess.png") 0 0 / 150px 300px no-repeat ;
+}
+
+.name-game {
+	margin-bottom: 50px;
+	font-weight: 900;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 2px 5px 10px rgb(175, 18, 18);
+}
